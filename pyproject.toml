@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -26,7 +26,7 @@ dependencies = [
     "distrax==0.1.5",
     "jax==0.4.28",
     "numpy==1.26.4",
-    "scikit_learn==1.4.1.post1"
+    "scikit_learn==1.4.2"
 ]
 
 [project.urls]
