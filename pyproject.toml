@@ -40,7 +40,8 @@ repository = "https://github.com/AI-Ahmed/ppcax"
 
 # This section is to specify source files that may not be in the expected places for Python package data:
 [tool.setuptools]
-packages = {find = {where = ["src"], exclude = ["tests", "tests.*"]}}
+packages = find:
+package_dir = {"": "src"}
 
 # If you had package data, you would include it like this:
 # include_package_data = true
