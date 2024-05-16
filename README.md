@@ -1,24 +1,8 @@
-# Financial Machine Learning Project
-
-![Project Image](https://github.com/AI-Ahmed/ahmed-repo/assets/72295771/c498c3dd-9b27-433f-8e5e-86e045c13cd2)
-*Image generated using Microsoft Copilot.*
+# ppcax – Probabilistic PCA with JAX
 
 ## Overview
 
-📈 Welcome to the Financial Machine Learning Project! This repository serves as a template for organizing and managing machine learning projects focused on financial data analysis and modeling. Whether you're building predictive models for stock prices, analyzing market trends, or exploring alternative investment strategies, this template provides a structured framework to streamline your workflow.
-
-## 📋 Table of Contents
-
-1. [Introduction](#-introduction)
-2. [Directory Structure](#-directory-structure)
-3. [Getting Started](#%EF%B8%8F-getting-started)
-4. [Usage](#-usage)
-5. [Contributing](#-contributing)
-6. [License](#-license)
-
-## 🚀 Introduction
-
-Financial markets present unique challenges and opportunities for machine learning practitioners. This project template aims to address those challenges by providing a modular and organized structure for managing financial data, building predictive models, and evaluating performance.
+In the current exploration of financial data analysis, we introduce two distinct versions of Probabilistic Principal Component Analysis (PPCA): a traditional PPCA framework and an enhanced "PPCA in High Dimension" model tailored for the vast dimensionality of information-driven datasets such as Dollar Bars Runs (DBRs). Traditional PPCA offers a stochastic approach for dimensionality reduction and feature extraction, which is critical for understanding high-risk market dynamics. However, its standard application presents limitations when faced with the intricacies of high-dimensional financial data. It is where our "PPCA in High Dimension" model gains prominence. It is meticulously crafted not merely to cope with but also to harness and elucidate the complexity inherent in such expansive datasets, which conventional PPCA cannot adequately manage. Both models are further refined through the integration with the JAX eco-systems, which provides the computational finesse needed to process large-scale data with heightened speed and precision via GPU acceleration.
 
 ## 📁 Directory Structure
 
@@ -31,6 +15,8 @@ Financial markets present unique challenges and opportunities for machine learni
 │   ├── bars
 │   ├── metadata
 │   ├── sample
+│   │   ├── r1
+│   │   └── r2
 │   └── tickers
 ├── models
 ├── notebooks
@@ -39,12 +25,18 @@ Financial markets present unique challenges and opportunities for machine learni
 │   ├── eval
 │   ├── figures
 │   └── train
+├── requirements.txt
 └── src
-    ├── evaluation
-    ├── feature_engineering
+    ├── __init__.py
+    ├── eval
+    ├── ft_eng
     ├── modeling
+    │   ├── __init__.py
+    │   └── ppcax.py
     ├── preprocessing
     └── utils
+
+21 directories, 6 files
 ```
 
 ## 🛠️ Getting Started
@@ -54,7 +46,6 @@ To get started with this project:
 1. Clone this repository to your local machine.
 2. Set up your Python environment and install the necessary dependencies listed in `requirements.txt`.
 3. Explore the provided directories to understand the structure of the project.
-4. Follow the instructions in each directory to populate it with your data, models, notebooks, etc.
 
 ## 💡 Usage
 
