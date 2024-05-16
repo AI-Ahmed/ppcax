@@ -15,7 +15,6 @@ setup(
     url='https://github.com/AI-Ahmed/ppcax',
     packages=find_packages(where='src'),  # Finds packages in 'src' to include
     package_dir={'': 'src'},  # Considers 'src' as the base directory for packages
-    packages=find_packages(),
     install_requires=requirements,
     include_package_data=True,
     classifiers=[
