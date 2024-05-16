@@ -1,1 +1,1 @@
-from src.modeling.ppcax import ppca
+from .modeling.ppcax import ppca

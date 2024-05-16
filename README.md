@@ -44,6 +44,9 @@ In the current exploration of financial data analysis, we introduce two distinct
 To get started with this project:
 
 1. Clone this repository to your local machine.
+```bash
+pip install 
+```
 2. Set up your Python environment and install the necessary dependencies listed in `requirements.txt`.
 3. Explore the provided directories to understand the structure of the project.
 
