@@ -22,11 +22,12 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
-    "chex==0.1.86",
-    "distrax==0.1.5",
-    "jax==0.4.28",
     "numpy==1.26.4",
-    "scikit_learn==1.4.2"
+    "scikit_learn==1.4.2",
+    "jax==0.4.28",
+    "jaxlib 0.4.28",
+    "chex==0.1.86",
+    "distrax==0.1.5"
 ]
 
 [project.urls]
