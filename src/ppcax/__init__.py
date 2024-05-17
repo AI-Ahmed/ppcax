@@ -1,1 +1,1 @@
-from .ppca import ppca
+from ._ppcax import ppca
