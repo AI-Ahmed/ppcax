@@ -27,7 +27,8 @@ dependencies = [
     "jax==0.4.28",
     "jaxlib==0.4.28",
     "chex==0.1.86",
-    "distrax==0.1.5"
+    "distrax==0.1.5",
+    "pytest==8.2.0"
 ]
 
 [project.urls]
