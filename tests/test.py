@@ -1,7 +1,7 @@
 import chex
 import pytest
+from .gen_data import create_sparse_equity_return_data, create_multivariate_equities_returns
 from src.ppcax import PPCA
-from gen_data import create_stationary_data, create_sparse_high_dim_data
 
 SEED = 42
 ST_SHAPE = (10000, 10)
@@ -16,13 +16,13 @@ def ppca_package():
 @pytest.fixture
 def stationary_data():
     # Fixture to return stationary data
-    return create_stationary_data(n_samples=ST_SHAPE[0], n_features=ST_SHAPE[1])
+    return create_multivariate_equities_returns(n_samples=ST_SHAPE[0], n_assets=ST_SHAPE[1])
 
 
 @pytest.fixture
 def high_dim_sparse_data():
     # Fixture to return high-dimensional sparse data
-    return create_sparse_high_dim_data(n_samples=HD_SP_SHAPE[0], n_features=HD_SP_SHAPE[1])
+    return create_sparse_equity_return_data(n_equities=HD_SP_SHAPE[0], n_bars=HD_SP_SHAPE[1])
 
 
 def test_init(ppca_package):
@@ -34,8 +34,9 @@ def test_init(ppca_package):
 
 def test_fit_without_em(ppca_package, stationary_data):
     ppca = ppca_package
-    ell, embedding = ppca.fit_transform(stationary_data, use_em=False)
-    assert embedding is None and ell is None
+    embedding = ppca.fit_transform(stationary_data, use_em=False)
+    chex.assert_shape(embedding, (q, ST_SHAPE[1]))
+    # assert embedding is None
     # Optionally, test parameters are learned correctly:
     # chex.assert_tree_all_finite(ppca.get_params())
 
