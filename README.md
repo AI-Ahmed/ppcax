@@ -1,4 +1,4 @@
-# ppcax – Probabilistic PCA with JAX
+# PPCAx – Probabilistic PCA with JAX
 
 ## Overview
 
