@@ -44,29 +44,45 @@ In the current exploration of financial data analysis, we introduce two distinct
 25 directories, 17 files
 ```
 
-## 🛠️ Getting Started
+## 🛠️ Initialization Instructions
 
-To get started with this project:
+Begin with the project setup process:
+- Ensure Python version 3.10 or newer is installed
 
-1. Clone this repository to your local machine.
-```bash
-pip install 
+1. Prepare your Python environment and install all required packages with the `pyproject.toml` file. Alternatively, for a manual approach, execute the following to install dependencies:
+```shell
+pip install -r requirements.txt
 ```
-2. Set up your Python environment and install the necessary dependencies listed in `requirements.txt`.
-3. Explore the provided directories to understand the structure of the project.
 
-## 💡 Usage
+2. If you want to install this project as a package, use the command below:
+```shell
+pip install git+https://github.com/AI-Ahmed/ppcax
+```
 
-This project template provides a flexible framework for organizing and managing financial machine learning projects. Here are some ways you can use it:
+3. Execute unit tests by running:
+```shell
+pytest tests/test.py
+```
 
-- **Data Management**: Store raw and processed financial data in the `data/` directory.
-- **Modeling**: Develop and train machine learning models in the `src/` directory.
-- **Notebooks**: Use Jupyter notebooks in the `notebooks/` directory for exploratory data analysis and experimentation.
-- **Reporting**: Generate reports and visualizations in the `reports/` directory to communicate your findings.
+## Cite Our Work
 
-## 🤝 Contributing
+If you find this work useful in your research, please consider citing:
 
-Contributions to this project template are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
+```bibtex
+@article{Atwa2024PPCA,
+  title={Probabilistic PCA: Stochastic Dimensionality Reduction of Sparse Multivariate Assets’ Bars at High-Risk Regimes},
+  author={Atwa, Ahmed N. and Kholief, Mohamed and Sedky, Ahmed},
+  journal={Journal of Financial Econometrics},
+  volume={XX},
+  number={X},
+  pages={1-31},
+  year={2024},
+  month={Month},
+  publisher={Oxford University Press},
+  doi={10.1093/XXXXXX/XXXXXX},
+  url={https://doi.org/10.1093/XXXXXX/XXXXXX}
+}
+```
 
 ## 📄 License
 This project is licensed under the [Apache License 2.0](LICENSE), which is a permissive open-source license that grants users extensive rights to use, modify, and distribute the software. See the [LICENSE](LICENSE) file for more details.
