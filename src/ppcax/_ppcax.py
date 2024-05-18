@@ -200,18 +200,18 @@ class PPCA(jittable.Jittable, BaseEstimator):
     def fit_transform(self,
                       *args,
                       **kwargs
-    ) -> Union[Tuple[Union[Array, FloatLike], Array], Array]:
+    ) -> Union[Tuple[Array, Array], Array]:
         r"""
         Fit the model to the data and simultaneously transform the data.
 
         Returns
         -------
-        - Tuple[Union[Array, FloatLike], Array]: Negative log-likelihood if using EM, None if using ML.
+        - Tuple[Array, Array]: Negative log-likelihood if using EM, None if using ML.
         - Array: Transformed data in the latent space.
         """
         ell = self.fit(*args, **kwargs)
 
-        if isinstance(ell, Union[Array, FloatLike]):
+        if isinstance(ell, Array):
             return ell, self.transform()
         else:
             return self.transform()
