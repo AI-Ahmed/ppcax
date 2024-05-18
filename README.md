@@ -20,23 +20,28 @@ In the current exploration of financial data analysis, we introduce two distinct
 │   └── tickers
 ├── models
 ├── notebooks
+├── pyproject.toml
 ├── reports
 │   ├── docs
 │   ├── eval
 │   ├── figures
 │   └── train
 ├── requirements.txt
-└── src
+├── src
+│   ├── __init__.py
+│   ├── eval
+│   ├── ft_eng
+│   ├── ppcax
+│   │   ├── __init__.py
+│   │   └── _ppcax.py
+│   ├── preprocessing
+│   └── utils
+└── tests
     ├── __init__.py
-    ├── eval
-    ├── ft_eng
-    ├── modeling
-    │   ├── __init__.py
-    │   └── ppcax.py
-    ├── preprocessing
-    └── utils
+    ├── gen_data.py
+    └── test.py
 
-21 directories, 6 files
+25 directories, 17 files
 ```
 
 ## 🛠️ Getting Started
