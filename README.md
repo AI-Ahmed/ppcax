@@ -51,17 +51,23 @@ Begin with the project setup process:
 
 1. Prepare your Python environment and install all required packages with the `pyproject.toml` file. Alternatively, for a manual approach, execute the following to install dependencies:
 ```shell
+git clone https://github.com/AI-Ahmed/ppcax.git
+cd ppcax
 pip install -r requirements.txt
 ```
 
-2. If you want to install this project as a package, use the command below:
+2. Execute unit tests by running:
+```shell
+pytest tests/test.py
+```
+
+3. If you want to install this project as a package, use the command below:
 ```shell
 pip install git+https://github.com/AI-Ahmed/ppcax
 ```
-
-3. Execute unit tests by running:
-```shell
-pytest tests/test.py
+Then, in Python, you can import the model,
+```python
+from ppcax import PPCA
 ```
 
 ## Cite Our Work
