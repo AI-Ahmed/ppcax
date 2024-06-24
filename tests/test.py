@@ -29,7 +29,6 @@ def test_init(ppca_package):
     ppca = ppca_package
     assert ppca.prior_sigma == 1.0
     assert ppca.seed == SEED
-    # Add more assertions as needed
 
 
 def test_fit_without_em(ppca_package, stationary_data):
@@ -45,8 +44,6 @@ def test_fit_with_em(ppca_package, stationary_data):
     ppca = ppca_package
     _, embedding = ppca.fit_transform(stationary_data, use_em=True, max_iter=20, verbose=1)
     chex.assert_shape(embedding, (q, ST_SHAPE[1]))
-    # Here you might want to check if result meets certain conditions
-    # for example, if the NLL reduced, or if parameters converged
 
 
 def test_fit_em_high_dimensional(ppca_package, high_dim_sparse_data):
