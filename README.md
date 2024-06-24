@@ -75,19 +75,14 @@ from ppcax import PPCA
 If you find this work useful in your research, please consider citing:
 
 ```bibtex
-@article{Atwa2024PPCA,
-  title={Probabilistic PCA: Stochastic Dimensionality Reduction of Sparse Multivariate Assets’ Bars at High-Risk Regimes},
-  author={Atwa, Ahmed N. and Kholief, Mohamed and Sedky, Ahmed},
-  journal={Journal of Financial Econometrics},
-  volume={XX},
-  number={X},
-  pages={1-31},
-  year={2024},
-  month={Month},
-  publisher={Oxford University Press},
-  doi={10.1093/XXXXXX/XXXXXX},
-  url={https://doi.org/10.1093/XXXXXX/XXXXXX}
+@article{Atwa2023,
+  author    = {Ahmed Atwa and Ahmed Sedky and Mohamed Kholief},
+  title     = {Probabilistic PCA in High Dimensions: Stochastic Dimensionality Reduction on Sparse Multivariate Assets' Bars at High-Risk Regimes},
+  journal   = {SSRN Electronic Journal},
+  year      = {2024},
+  note      = {Available at SSRN: \url{https://ssrn.com/abstract=4874874} or \url{http://dx.doi.org/10.2139/ssrn.4874874}}
 }
+
 ```
 
 ## 📄 License
