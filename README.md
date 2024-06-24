@@ -1,9 +1,17 @@
 # PPCAx – Probabilistic PCA with JAX
 
 ## Overview
+Probabilistic Principal Component Analysis (PPCA) model using DeepMind's JAX library. The model is a robust feature extraction and dimensionality reduction technique for high-dimensional, sparse multivariate data.
 
-In the current exploration of financial data analysis, we introduce two distinct versions of Probabilistic Principal Component Analysis (PPCA): a traditional PPCA framework and an enhanced "PPCA in High Dimension" model tailored for the vast dimensionality of information-driven datasets such as Dollar Bars Runs (DBRs). Traditional PPCA offers a stochastic approach for dimensionality reduction and feature extraction, which is critical for understanding high-risk market dynamics. However, its standard application presents limitations when faced with the intricacies of high-dimensional financial data. It is where our "PPCA in High Dimension" model gains prominence. It is meticulously crafted not merely to cope with but also to harness and elucidate the complexity inherent in such expansive datasets, which conventional PPCA cannot adequately manage. Both models are further refined through the integration with the JAX eco-systems, which provides the computational finesse needed to process large-scale data with heightened speed and precision via GPU acceleration.
+PPCA is a probabilistic approach to Principal Component Analysis (PCA), which allows for imputing missing values and estimating latent variables in the data. By leveraging the power of JAX, this implementation ensures efficient and scalable computation, making it suitable for large-scale financial datasets.
 
+The methodology used in this project was initially proposed in our research manuscript titled *"Probabilistic PCA in High Dimensions: Stochastic Dimensionality Reduction on Sparse Multivariate Assets' Bars at High-Risk Regimes"*. This work presents a novel approach for analyzing portfolio behavior during periods of high market turbulence and risk by:
+
+1. Using information-driven bar techniques to synchronize and sample imbalanced sequence volumes.
+2. Applying a sampling event-based technique, the CUMSUM Filtering method, to create strategic trading plans based on volatility.
+3. Employing an improved version of the Gaussian Linear System called PPCA for feature extraction from the latent space.
+
+Our findings suggest that PPCA is highly effective in estimating sparse data and forecasting the effects of individual assets within a portfolio under varying market conditions. This repository contains the core implementation of the PPCA model, demonstrating its capability to establish significant relationships among correlated assets during high-risk regimes.
 ## 📁 Directory Structure
 
 ```bash
@@ -76,7 +84,7 @@ If you find this work useful in your research, please consider citing:
 
 ```bibtex
 @article{Atwa2023,
-  author    = {Ahmed Atwa and Ahmed Sedky and Mohamed Kholief},
+  author    = {Ahmed Atwa and Mohamed Kholief and Ahmed Sedky},
   title     = {Probabilistic PCA in High Dimensions: Stochastic Dimensionality Reduction on Sparse Multivariate Assets' Bars at High-Risk Regimes},
   journal   = {SSRN Electronic Journal},
   year      = {2024},
