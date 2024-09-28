@@ -15,9 +15,6 @@ from distrax._src.utils import jittable
 import numpy as np
 from sklearn.base import BaseEstimator
 
-random.seed(42)
-np.random.seed(42)
-
 PRNGKey = chex.PRNGKey
 Array = Union[chex.Array, chex.ArrayNumpy]
 IntLike = Union[int, np.int16, np.int32, np.int64]
