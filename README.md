@@ -119,20 +119,8 @@ To run the unit tests and ensure everything is working correctly:
 2. **Run Tests Using pytest**
 
    ```shell
-   pytest tests/
+   pytest tests/test.py
    ```
-
-   This command runs all tests located in the `tests/` directory.
-
-## 📏 Code Style and Linting
-
-To maintain code quality and consistency, `flake8` is used for linting. You can run linting checks with:
-
-```shell
-flake8 src/ tests/
-```
-
-Ensure that your code adheres to the style guidelines before committing changes.
 
 ## 📚 Usage Example
 
