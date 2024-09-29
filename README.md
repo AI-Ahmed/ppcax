@@ -213,13 +213,7 @@ If you're planning to contribute to the project or modify the code, follow these
 6. **Run Tests**
 
    ```shell
-   pytest tests/
-   ```
-
-7. **Run Linting**
-
-   ```shell
-   flake8 src/ tests/
+   pytest tests/test.py
    ```
 
 ## 🤝 Contributing
@@ -264,6 +258,6 @@ To publish a new version of the package to PyPI:
 
 ## 🌐 Links
 
-- **Documentation**: [Link to documentation if available]
+- **Documentation**: [Github Package documentation](https://github.com/AI-Ahmed/ppcax/README.md)
 - **Issue Tracker**: [GitHub Issues](https://github.com/AI-Ahmed/ppcax/issues)
 - **Source Code**: [GitHub Repository](https://github.com/AI-Ahmed/ppcax)
