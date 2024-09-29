@@ -205,8 +205,10 @@ If you're planning to contribute to the project or modify the code, follow these
 
 4. **Install the Package in Editable Mode**
 
+   - For development and testing, install the package with the `test` extras:
+
    ```shell
-   flit install --deps develop --symlink
+   flit install --deps develop --extras test --symlink
    ```
 
    The `--symlink` option installs the package in editable mode, so changes to the code are immediately reflected without reinstallation.
@@ -240,7 +242,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## 📬 Contact
 
-For any questions or inquiries, please contact [Ahmed Nabil Atwa](mailto:your-email@example.com).
+For any questions or inquiries, please contact [Ahmed Nabil Atwa](mailto:dr.ahmedna.ai@gmail.com).
 
 ---
 
